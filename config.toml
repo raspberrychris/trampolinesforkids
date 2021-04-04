@@ -156,7 +156,7 @@ hasChildren = true
   name = "Elements"
 
   [[menu.main]]
-  parent = "Pages"
+  parent = "blach"
   weight = 5
   url = "privacy/"
   name = "Privacy"
