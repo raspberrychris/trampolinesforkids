@@ -1,0 +1,91 @@
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    scroll-padding-top: 100px;
+}
+
+/* utility */
+.flexy{
+    display: flex;
+}
+/* end of utility classes */
+
+.openToc{
+    /* visibility: hidden; */
+    transform-origin: top;
+    transform: translateY(-50%);
+    /* transition: 150ms; */
+}
+
+.scale-height{
+    transform: scaleY(0);
+    transition: 200s;
+    transform-origin: top;
+}
+
+.flip-arrow{
+    transform: rotate(270deg) !important;
+    transition: 500ms;
+}
+
+.d-none{
+    display: unset !important;
+}
+.toc-label-title{
+    font-weight: 1000;
+}
+
+.toc-content{
+    display: none;
+}
+
+.visibility{
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms;
+    transition-delay: 500ms;
+}
+
+.svg-drop-down{
+    fill: black;
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+}
+
+.toc-label{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+aside.toc{
+    margin-bottom: 2rem;
+    background-color: #fafafa;
+    padding: 1rem 2rem;
+    transition: 1s;
+    transform-origin: top;
+    border-left: 2px solid #01ab9d;
+}
+    
+#TableOfContents{
+    transform-origin: top;
+    transition: 1s;
+    height:max-content;
+}
+
+#TableOfContents ul li ul li{
+    list-style-type: none;
+    margin-left: 1.5rem;
+    
+}
+
+#TableOfContents ul li {
+    list-style-type: none;
+}
+#TableOfContents ul li a {
+    font-weight: 200;
+}
+#TableOfContents ul li ul li a {
+      font-weight: normal;
+}
